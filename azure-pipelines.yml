@@ -30,7 +30,7 @@ pr:
     - master
   paths:
     include:
-    - src/HttpHelper/*
+    - src/OpcUaHelper/*
 
 # build solution and create nuget package
 stages:
