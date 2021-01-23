@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Kevin Brashears</Authors>
+    <Company>kbrashears5</Company>
+    <Description>Net Standard helper classes for OPC UA protocol</Description>
+    <PackageProjectUrl>https://github.com/kbrashears5/net-standard-opc-ua-helper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/kbrashears5/net-standard-opc-ua-helper</RepositoryUrl>
+    <RepositoryType>github</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>OPC;OPCUA;Helper;NetStandard</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>documentation.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OPCFoundation.NetStandard.Opc.Ua" Version="1.4.365.10" />
+  </ItemGroup>
+
+</Project>
