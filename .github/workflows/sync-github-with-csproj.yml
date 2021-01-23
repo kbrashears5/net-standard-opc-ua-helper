@@ -15,5 +15,5 @@ jobs:
         uses: kbrashears5/github-action-repo-sync@master
         with:
           TYPE: nuget
-          PATH: src/OpcUaHelper/OpcUaHelper.csproj
+          PATH: src/NetStandardOpcUaHelper/NetStandardOpcUaHelper.csproj
           TOKEN: ${{ secrets.ACTIONS }}

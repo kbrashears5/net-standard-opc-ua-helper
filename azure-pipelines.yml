@@ -20,7 +20,7 @@ trigger:
     - master
   paths:
     include:
-    - src/OpcUaHelper/*
+    - src/NetStandardOpcUaHelper/*
 
 # define pull request triggers (https://docs.microsoft.com/en-us/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml#pr-triggers)
 pr:
@@ -30,12 +30,12 @@ pr:
     - master
   paths:
     include:
-    - src/OpcUaHelper/*
+    - src/NetStandardOpcUaHelper/*
 
 # build solution and create nuget package
 stages:
 - template: templates/build-dotnet-core.yml@templates
   parameters:
     pack: true
-    filesToPack: '**/OpcUaHelper.csproj'
-    testProjects: '**/OpcUaHelper.Test.csproj'
+    filesToPack: '**/NetStandardOpcUaHelper.csproj'
+    testProjects: '**/NetStandardOpcUaHelper.Test.csproj'
