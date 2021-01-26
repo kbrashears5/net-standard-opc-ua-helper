@@ -4,9 +4,9 @@
     
 <b>Collection of helper functions for interacting with OPC UA servers</b>
     
-[![Build Status](https://dev.azure.com/kbrashears5/github/_apis/build/status/kbrashears5.net-standard-opc-ua-helper?branchName=master)](https://dev.azure.com/kbrashears5/github/_build/latest?definitionId=34&branchName=master)
-[![Tests](https://img.shields.io/azure-devops/tests/kbrashears5/github/34)](https://img.shields.io/azure-devops/tests/kbrashears5/github/34)
-[![Code Coverage](https://img.shields.io/azure-devops/coverage/kbrashears5/github/34)](https://img.shields.io/azure-devops/coverage/kbrashears5/github/34)
+[![Build Status](https://dev.azure.com/kbrashears5/github/_apis/build/status/kbrashears5.net-standard-opc-ua-helper?branchName=master)](https://dev.azure.com/kbrashears5/github/_build/latest?definitionId=35&branchName=master)
+[![Tests](https://img.shields.io/azure-devops/tests/kbrashears5/github/35)](https://img.shields.io/azure-devops/tests/kbrashears5/github/35)
+[![Code Coverage](https://img.shields.io/azure-devops/coverage/kbrashears5/github/35)](https://img.shields.io/azure-devops/coverage/kbrashears5/github/35)
 
 [![nuget](https://img.shields.io/nuget/v/NetStandardOpcUaHelper.svg)](https://www.nuget.org/packages/NetStandardOpcUaHelper/)
 [![nuget](https://img.shields.io/nuget/dt/NetStandardOpcUaHelper)](https://img.shields.io/nuget/dt/NetStandardOpcUaHelper)
