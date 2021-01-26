@@ -8,9 +8,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3203E745-CF47-48DB-A82B-1F5C3AF835E6}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		OpcUa.Client.Config.xml = OpcUa.Client.Config.xml
+		OpcUa.Server.Config.xml = OpcUa.Server.Config.xml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetStandardOpcUaHelper.Test", "src\NetStandardOpcUaHelper.Test\NetStandardOpcUaHelper.Test.csproj", "{90EAAFC3-5013-462E-A30F-141B75BDF4F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetStandardOpcUaHelper.Test", "src\NetStandardOpcUaHelper.Test\NetStandardOpcUaHelper.Test.csproj", "{90EAAFC3-5013-462E-A30F-141B75BDF4F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -14,7 +14,7 @@
 
 # Usage
 ## OPC UA Client Helper
-### Base usage
+### Base Usage
 ```c#
 var helper = new OpcUaClientHelper();
 
@@ -54,7 +54,7 @@ You can run your own keep alive code by providing a keep alive to the `Initializ
 ```c#
 var helper = new OpcUaClientHelper();
 
-helper.InitializeOpcUaClientConnection(clientName: "MyOpcUaClient",
+await helper.InitializeOpcUaClientConnection(clientName: "MyOpcUaClient",
     configPath: @"C:\temp\client.xml",
     opcUaUrl: "opc.tcp://localhost:4840",
     sessionName: "MySessionName",
@@ -78,4 +78,21 @@ When unable to reconnect to the OPC UA server, the helper will try to create a n
 
 When this happens however, you'll lose the subscriptions that were previously there.
 
-Subscribe to the `NewSession` event to recreate these subscriptions once the new session has been created
+Subscribe to the `NewSession` event to recreate these subscriptions once the new session has been 
+
+### OpcUa.Client.Config.xml
+A sample client config XML file is located in the root of the repo
+
+## OPC UA Server Helper
+### Base Usage
+```c#
+var server = new StandardServer();
+
+var helper = new OpcUaServerHelper(server: server,
+    port: 4840);
+
+await helper.InitializeOpcUaServer(configPath: @"C:\temp\server.xml");
+```
+
+### OpcUa.Server.Config.xml
+A sample client config XML file is located in the root of the repo

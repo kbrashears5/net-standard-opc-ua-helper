@@ -11,7 +11,11 @@
 
         public static string SessionNotCreated { get; } = "Session has not yet been created";
 
+        public static string NodeManagerNotCreated { get; } = "Node Manager has not yet been created";
+
         public static string SubCount { get; } = "ObjectStatistics_MonitoredItemData";
+
+        public static string Locale { get; } = "en";
 
 #pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
     }
