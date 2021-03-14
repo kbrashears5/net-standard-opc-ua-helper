@@ -529,14 +529,14 @@ namespace NetStandardOpcUaHelper
             this.SessionName = string.IsNullOrWhiteSpace(sessionName) ? throw new ArgumentNullException(nameof(sessionName)) : sessionName;
             if (sessionTimeout == 0) throw new ArgumentException(nameof(sessionTimeout));
 
-            var clientApplicationConfig = await this.CreateOpcUaConfiguration(clientName: clientName,
-                configPath: configPath);
+            var clientApplicationConfig = await this.CreateOpcUaConfiguration(clientName: this.ClientName,
+                configPath: this.ConfigPath);
 
-            var selectedEndpoint = this.CreateOpcUaEndpoint(opcUrl: opcUaUrl);
+            var selectedEndpoint = this.CreateOpcUaEndpoint(opcUrl: this.OpcUaUrl);
 
             await this.CreateOpcUaSession(applicationConfig: clientApplicationConfig,
                 selectedEndpoint: selectedEndpoint,
-                sessionName: sessionName,
+                sessionName: this.SessionName,
                 sessionTimeout: sessionTimeout,
                 keepAlive: keepAlive);
         }

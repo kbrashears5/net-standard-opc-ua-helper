@@ -46,10 +46,7 @@ namespace NetStandardOpcUaHelper.Test
 
         internal static string ObjectName { get; } = nameof(ObjectName);
 
-        internal static string GetPath()
-        {
-            return $@"{Directory.GetCurrentDirectory()}\{nameof(OpcUaServerHelper)}.Config.xml";
-        }
+        internal static string GetPath() => $@"{Directory.GetCurrentDirectory()}\{nameof(OpcUaServerHelper)}.Config.xml";
 
         internal static ReferenceDescription ReferenceDescription { get; } = new ReferenceDescription();
 
